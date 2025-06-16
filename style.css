@@ -1,0 +1,21 @@
+* {
+    font-family: "Poppins", sans-serif;
+    ;
+}
+
+:root {
+    --red-color: #a2080f;
+    --yellow-color: #FFD700;
+    --black-color: #1F1F1F;
+    --white-color: #F5F5F5;
+}
+
+#navbar {
+    background-color: var(--red-color);
+}
+
+#search-div p,
+#search-div i
+{
+    color: rgba(255, 255, 255, 0.736);
+}
