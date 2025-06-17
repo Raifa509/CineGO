@@ -1,17 +1,14 @@
 * {
     font-family: "Poppins", sans-serif;
-    ;
+    
 }
 
 :root {
-    --red-color: #a2080f;
+    --red-color: #630202;
     --yellow-color: #FFD700;
-    --black-color: #1F1F1F;
+    --lightblack-color: #1f1f1fbe;
+    --black-color:rgb(0, 0, 0);
     --white-color: #F5F5F5;
-}
-
-#navbar {
-    background-color: var(--red-color);
 }
 
 #search-div p,
@@ -19,3 +16,8 @@
 {
     color: rgba(255, 255, 255, 0.736);
 }
+
+#black-hover{
+
+    background-color: var(--lightblack-color);
+} 

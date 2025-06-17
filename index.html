@@ -29,33 +29,202 @@
 <body>
     <div>
         <!-- navbar -->
-        <nav id="navbar" class="flex justify-between w-full p-4">
+        <nav id="navbar" class="flex justify-between w-full md:p-2 py-6 bg-black">
             <div class="flex items-center " id="search-div">
-                <img src="./media/logo.png" alt="logo" class="w-18">
-                <h1 class="text-3xl text-white">CineGO</h1>
-                <div class="w-150 border-2 border-solid px-2 py-2 flex items-center mx-5 rounded-lg text-white" id="search">
-                    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-                    <p class="ps-3 text-xl">Search for Movies</p>
+                <img src="./media/logo.png" alt="logo" class="md:w-18 w-8">
+                <h1 class="md:text-2xl text-base text-white">CineGO</h1>
+                <div class="md:w-150 w-34 border-2 border-solid md:px-2 px-1 md:py-1 py-1 flex items-center md:mx-5 mx-1 md:rounded-lg rounded-sm text-white focus-within:border-yellow-500"
+                    id="search">
+                    <i class="fa-solid fa-magnifying-glass text-sm md:text-xl"></i>
+                    <input type="text" placeholder="Search for Movies"
+                        class="bg-transparent outline-none md:ps-3 ps-1 md:text-xl text-xs text-white w-full">
                 </div>
             </div>
 
-            <div class="flex items-center mx-5">
-                <div class="mx-5">
-                    <h1 class="text-2xl text-white">City<span class="ms-2"><i class="fa-solid fa-caret-down fa-lg "></i></span></h1>
+            <div class="flex items-center md:mx-5 mx-3">
+                <div class="md:mx-5 mx-1">
+                    <h1 class="md:text-xl  text-sm text-white hover:text-yellow-500 ">City<span class="md:ms-2 ms-1 "><i
+                                class="fa-solid fa-caret-down fa-lg "></i></span></h1>
                 </div>
-                <div class="mx-5 text-white">
-                    <h1 class="text-2xl">Sign in</h1>
+                <div class="md:mx-5 mx-1 text-white">
+                    <h1 class="md:text-xl text-sm hover:text-yellow-500">Sign in</h1>
                 </div>
-                <div class="mx-5 text-white">
-                    <i class="fa-solid fa-bars fa-2xl"></i>
+                <div class="md:mx-5 mx-1 text-white">
+                    <i class="fa-solid fa-bars text-lg md:text-4xl hover:text-yellow-500"></i>
                 </div>
-
             </div>
 
 
 
 
         </nav>
+        <!-- banner -->
+        <div class="w-full flex py-1 px-8" id="banner">
+
+
+            <img src="https://template.canva.com/EAFI6KdWn7Q/2/0/1600w-PQB88muOE0M.jpg" alt=""
+                class="w-full md:h-100 h-40">
+
+            <!-- <img src="./media/jurassic-world-rebirth.jpg" alt="" class="w-full md:h-125 px-55 h-40 mt-2"> -->
+
+
+
+        </div>
+        <!--menu section-->
+        <div class="md:p-5 p-3">
+            <ul class="flex justify-center ">
+                <li class="md:mx-5 mx-2 md:text-xl text-sm font-medium text-red-700 hover:text-red-600">Now Showing
+                </li>
+                <li class="md:mx-5 mx-2 md:text-xl text-sm  font-medium text-red-700 hover:text-red-600">Coming Soon
+                </li>
+                <li class="md:mx-5 mx-2 md:text-xl text-sm  font-medium text-red-700 hover:text-red-600">Trailers</li>
+            </ul>
+        </div>
+        <!--Recommended movies-->
+
+        <div class="w-full py-8 px-20 ">
+            <!-- recommended title -->
+            <div class="flex items-center w-full">
+                <h2 class="text-3xl">Recommended Movies</h2>
+                <div class="w-[77%] h-[3px] bg-gray-700 ms-3"></div>
+            </div>
+            <!-- recommended movies-->
+            <div class="flex ">
+                <!-- movie1 -->
+                <div class="w-[18%] py-10 ms-10 group relative">
+                    <img src="https://assetscdn1.paytm.com/images/cinema/Vyasanasametham-Bandhumithradhikal-poster-103e1d40-45c7-11f0-b426-a50671acfc24.jpg?format=webp&imwidth=576"
+                        alt="no image">
+                    <!-- hover -->
+                    <div id="black-hover" class="
+                    opacity-0 pointer-events-none group-hover:opacity-100
+                    group-hover:pointer-events-auto
+                    flex transition-opacity duration-700 ease-in-out
+                        absolute top-[53.8%] 
+                        w-full justify-center items-center flex-col p-3
+                        ">
+                        <div class="py-4 ">
+                            <i class="fa-solid fa-circle-play fa-3x text-white"></i>
+                        </div>
+                        <button class="text-black font-medium border-0 bg-yellow-500 w-full px-3 py-1">Book
+                            Now</button>
+                    </div>
+                    <!-- text content -->
+                    <div>
+                        <h1 class="text-xl py-2 font-medium px-2">Vyasana Sametham Bandhu Mithradhikal</h1>
+                        <p class="text-lg px-2">Comedy/Drama</p>
+
+                    </div>
+                </div>
+
+                <!-- movie 2 -->
+                <div class="w-[18%] py-10 ms-10 group relative">
+                    <img src="https://assetscdn1.paytm.com/images/cinema/Ronth--0383e670-3a3c-11f0-b426-a50671acfc24.jpg?format=webp&imwidth=576"
+                        alt="no image">
+                    <!-- hover -->
+                    <div id="black-hover" class="
+                    opacity-0 pointer-events-none group-hover:opacity-100
+                    group-hover:pointer-events-auto
+                    flex transition-opacity duration-700 ease-in-out
+                        absolute top-[53.8%] 
+                        w-full justify-center items-center flex-col p-3
+                        ">
+                        <div class="py-4 ">
+                            <i class="fa-solid fa-circle-play fa-3x text-white"></i>
+                        </div>
+                        <button class="text-black font-medium border-0 bg-yellow-500 w-full px-3 py-1">Book
+                            Now</button>
+                    </div>
+                    <!-- text content -->
+                    <div>
+                        <h1 class="text-xl py-2 font-medium px-2">Ronth</h1>
+                        <p class="text-lg px-2">Crime/Drama</p>
+
+                    </div>
+                </div>
+                   <!-- movie 3 -->
+                <div class="w-[18%] py-10 ms-10 group relative">
+                    <img src="https://assetscdn1.paytm.com/images/cinema/PRINCE-%26-FAMILY--daeae850-2288-11f0-a22b-459bceb33eba.jpg?format=webp&imwidth=576"
+                        alt="no image">
+                    <!-- hover -->
+                    <div id="black-hover" class="
+                    opacity-0 pointer-events-none group-hover:opacity-100
+                    group-hover:pointer-events-auto
+                    flex transition-opacity duration-700 ease-in-out
+                        absolute top-[53.8%] 
+                        w-full justify-center items-center flex-col p-3
+                        ">
+                        <div class="py-4 ">
+                            <i class="fa-solid fa-circle-play fa-3x text-white"></i>
+                        </div>
+                        <button class="text-black font-medium border-0 bg-yellow-500 w-full px-3 py-1">Book
+                            Now</button>
+                    </div>
+                    <!-- text content -->
+                    <div>
+                        <h1 class="text-xl py-2 font-medium px-2">How to Train your Dragon</h1>
+                        <p class="text-lg px-2">Adventure/Fantasy</p>
+
+                    </div>
+                </div>
+                  <!-- movie 4 -->
+                <div class="w-[18%] py-10 ms-10 group relative">
+                    <img src="https://assetscdn1.paytm.com/images/cinema/Howtotrain-your-dragon--Poster-0b38ce10-a727-11ef-8f1f-a7114947674f-a11f3f20-407b-11f0-aa9f-8fefdb33bbbf.jpg?format=webp&imwidth=576"
+                        alt="no image">
+                    <!-- hover -->
+                    <div id="black-hover" class="
+                    opacity-0 pointer-events-none group-hover:opacity-100
+                    group-hover:pointer-events-auto
+                    flex transition-opacity duration-700 ease-in-out
+                        absolute top-[53.8%] 
+                        w-full justify-center items-center flex-col p-3
+                        ">
+                        <div class="py-4 ">
+                            <i class="fa-solid fa-circle-play fa-3x text-white"></i>
+                        </div>
+                        <button class="text-black font-medium border-0 bg-yellow-500 w-full px-3 py-1">Book
+                            Now</button>
+                    </div>
+                    <!-- text content -->
+                    <div>
+                        <h1 class="text-xl py-2 font-medium px-2">How to Train your Dragon</h1>
+                        <p class="text-lg px-2">Adventure/Fantasy</p>
+
+                    </div>
+                </div>
+                 <!-- movie 5 -->
+                <div class="w-[18%] py-10 ms-10 group relative">
+                    <img src="https://assetscdn1.paytm.com/images/cinema/poster%20_0023_abhyanthara%20kuttavali3-39143660-41d9-11f0-b426-a50671acfc24.jpg?format=webp&imwidth=576"
+                        alt="no image">
+                    <!-- hover -->
+                    <div id="black-hover" class="
+                    opacity-0 pointer-events-none group-hover:opacity-100
+                    group-hover:pointer-events-auto
+                    flex transition-opacity duration-700 ease-in-out
+                        absolute top-[53.8%] 
+                        w-full justify-center items-center flex-col p-3
+                        ">
+                        <div class="py-4 ">
+                            <i class="fa-solid fa-circle-play fa-3x text-white"></i>
+                        </div>
+                        <button class="text-black font-medium border-0 bg-yellow-500 w-full px-3 py-1">Book
+                            Now</button>
+                    </div>
+                    <!-- text content -->
+                    <div>
+                        <h1 class="text-xl py-2 font-medium px-2">How to Train your Dragon</h1>
+                        <p class="text-lg px-2">Adventure/Fantasy</p>
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+
+        </div>
+
         <!-- last div -->
     </div>
 </body>
