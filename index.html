@@ -43,13 +43,13 @@
 
             <div class="flex items-center md:mx-5 mx-3">
                 <div class="md:mx-5 mx-1">
-                    <h1 class="md:text-xl  text-sm text-white hover:text-yellow-500 ">City<span class="md:ms-2 ms-1 "><i
-                                class="fa-solid fa-caret-down fa-lg "></i></span></h1>
+                    <h1 class="md:text-xl  text-sm text-white hover:text-yellow-500 cursor-pointer">City<span
+                            class="md:ms-2 ms-1 "><i class="fa-solid fa-caret-down fa-lg "></i></span></h1>
                 </div>
                 <div class="md:mx-5 mx-1 text-white">
-                    <h1 class="md:text-xl text-sm hover:text-yellow-500">Sign in</h1>
+                    <h1 class="md:text-xl text-sm hover:text-yellow-500 cursor-pointer">Sign in</h1>
                 </div>
-                <div class="md:mx-5 mx-1 text-white">
+                <div class="md:mx-5 mx-1 text-white cursor-pointer cursor-pointer">
                     <i class="fa-solid fa-bars text-lg md:text-4xl hover:text-yellow-500"></i>
                 </div>
             </div>
@@ -73,11 +73,14 @@
         <!--menu section-->
         <div class="md:p-5 p-3">
             <ul class="flex justify-center ">
-                <li class="md:mx-5 mx-2 md:text-xl text-sm font-medium text-red-700 hover:text-red-600">Now Showing
+                <li class="md:mx-5 mx-2 md:text-xl text-sm font-medium text-red-700 hover:text-red-600 cursor-pointer">
+                    Now Showing
                 </li>
-                <li class="md:mx-5 mx-2 md:text-xl text-sm  font-medium text-red-700 hover:text-red-600">Coming Soon
+                <li class="md:mx-5 mx-2 md:text-xl text-sm  font-medium text-red-700 hover:text-red-600 cursor-pointer">
+                    Coming Soon
                 </li>
-                <li class="md:mx-5 mx-2 md:text-xl text-sm  font-medium text-red-700 hover:text-red-600">Trailers</li>
+                <li class="md:mx-5 mx-2 md:text-xl text-sm  font-medium text-red-700 hover:text-red-600 cursor-pointer">
+                    Trailers</li>
             </ul>
         </div>
         <!--Recommended movies-->
@@ -85,8 +88,8 @@
         <div class="w-full md:pt-8 py-4 md:px-20 px-4 ">
             <!-- recommended title -->
             <div class="flex items-center w-full">
-                <h2 class="md:text-3xl text-lg">Recommended Movies</h2>
-                <div class="md:w-[77%] h-[3px] bg-gray-700 ms-3"></div>
+                <h2 class="md:text-2xl text-lg font-medium md:text-left">Recommended Movies</h2>
+                <div class="hidden md:inline-flex md:w-[79%] h-[3px] bg-gray-700 ms-3"></div>
             </div>
             <!-- recommended movies-->
             <div class="grid grid-cols-2 md:grid-cols-5 md:gap-6 gap-3">
@@ -245,16 +248,27 @@
         <section>
             <div class="w-full md:py-3 py-4 md:px-20 px-4 ">
                 <div class="flex items-center w-full">
-                    <h2 class="md:text-3xl text-lg">Now Showing</h2>
-                    <div class="md:w-[86%] h-[3px] bg-gray-700 ms-3"></div>
+                    <h2 class="md:text-2xl text-lg font-medium md:py-0 pt-7 md:pb-0 pb-5">Now Showing</h2>
+                    <div class="md:w-[85.5%] h-[3px] bg-gray-700 ms-3"></div>
                 </div>
+                <!-- see all button -->
+                <div class="hidden md:block text-right pt-5 text-red-700 hover:text-red-600 ">
+                    <button class="md:text-lg text-sm
+                            md:pr-7
+                            border-0  cursor-pointer">See all
+                        <i class="fa-solid fa-angles-right"></i></button>
 
+                </div>
 
                 <div class="grid grid-cols-2 md:grid-cols-5 md:gap-6 gap-3">
                     <!-- movies 1 -->
-                    <div class="md:py-10 pt-5 group relative transition-transform duration-300 hover:scale-103">
+                    <div class="md:py-10 pt-5 group relative transition-transform duration-300 hover:scale-103 ">
                         <img src="https://assetscdn1.paytm.com/images/cinema/Sitare%20Zameen%20Par-12e06cc0-4693-11f0-a823-275ef5d0ccef.jpeg?format=webp&imwidth=576"
                             alt="no image">
+                        <div
+                            class="w-[60%]  bg-green-500 md:px-3 md:py-1 text-center absolute md:top-10 top-5 text-white md:text-xl text-xs">
+                            <p>New release</p>
+                        </div>
                         <!-- text content -->
                         <div class="p-3">
                             <h1 class="md:text-xl text-lg md:py-2 pt-1 leading-[1.2] font-medium px-2">Sitaare Zameen
@@ -264,28 +278,32 @@
                         </div>
                         <div class="text-center">
                             <button
-                                class="text-base text-black font-medium border-0 bg-yellow-500 w-[55%] px-2 py-2">Book
+                                class="md:text-base text-sm md:text-black text-white font-medium border-0 bg-yellow-500 w-[55%] md:px-2  px-2 py-1 md:py-2">Book
                                 Now</button>
                         </div>
                     </div>
 
                     <!-- movies 2 -->
                     <div class="md:py-10 pt-5 group relative transition-transform duration-300 hover:scale-103">
-                        <img src="https://assetscdn1.paytm.com/images/cinema/Elio_3_Poster-3a838940-4aaa-11f0-bdae-31cf0cb4d840.jpg?format=webp&imwidth=576"
+                        <img src="https://assetscdn1.paytm.com/images/cinema/Chotta-Mumbai-fb857590-411d-11f0-aa9f-8fefdb33bbbf.jpg?format=webp&imwidth=576"
                             alt="no image">
+                        <div
+                            class="w-[60%]  bg-green-500 md:px-3 md:py-1 text-center absolute md:top-10 top-5 text-white md:text-xl text-xs">
+                            <p>Re-release</p>
+                        </div>
                         <!-- text content -->
                         <div class="p-3">
-                            <h1 class="md:text-xl text-lg md:py-2 pt-1 leading-[1.2] font-medium px-2">Elio</h1>
-                            <p class="md:text-lg text-base px-2">Animation • English </p>
+                            <h1 class="md:text-xl text-lg md:py-2 pt-1 leading-[1.2] font-medium px-2">Chotta Mumbai
+                            </h1>
+                            <p class="md:text-lg text-base px-2">Comedy• Malayalam </p>
 
                         </div>
                         <div class="text-center">
                             <button
-                                class="text-base text-black font-medium border-0 bg-yellow-500 w-[55%] px-2 py-2">Book
+                                class="md:text-base text-sm md:text-black text-white font-medium border-0 bg-yellow-500 w-[55%] md:px-2  px-2 py-1 md:py-2">Book
                                 Now</button>
                         </div>
                     </div>
-
                     <!-- movies 3 -->
                     <div class="md:py-10 pt-5 group relative transition-transform duration-300 hover:scale-103">
                         <img src="https://assetscdn1.paytm.com/images/cinema/Narivetta-5c010480-326d-11f0-aa9f-8fefdb33bbbf.jpg?format=webp&imwidth=576"
@@ -298,7 +316,7 @@
                         </div>
                         <div class="text-center">
                             <button
-                                class="text-base text-black font-medium border-0 bg-yellow-500 w-[55%] px-2 py-2">Book
+                                class="md:text-base text-sm md:text-black text-white font-medium border-0 bg-yellow-500 w-[55%] md:px-2  px-2 py-1 md:py-2">Book
                                 Now</button>
                         </div>
                     </div>
@@ -315,7 +333,7 @@
                         </div>
                         <div class="text-center">
                             <button
-                                class="text-base text-black font-medium border-0 bg-yellow-500 w-[55%] px-2 py-2">Book
+                                class="md:text-base text-sm md:text-black text-white font-medium border-0 bg-yellow-500 w-[55%] md:px-2  px-2 py-1 md:py-2">Book
                                 Now</button>
                         </div>
                     </div>
@@ -331,24 +349,27 @@
                         </div>
                         <div class="text-center">
                             <button
-                                class="text-base text-black font-medium border-0 bg-yellow-500 w-[55%] px-2 py-2">Book
+                                class="md:text-base text-sm md:text-black text-white font-medium border-0 bg-yellow-500 w-[55%] md:px-2  px-2 py-1 md:py-2">Book
                                 Now</button>
                         </div>
                     </div>
                     <!-- movies 6 -->
                     <div class="md:py-10 pt-5 group relative transition-transform duration-300 hover:scale-103">
-                        <img src="https://assetscdn1.paytm.com/images/cinema/Chotta-Mumbai-fb857590-411d-11f0-aa9f-8fefdb33bbbf.jpg?format=webp&imwidth=576"
+                        <img src="https://assetscdn1.paytm.com/images/cinema/Elio_3_Poster-3a838940-4aaa-11f0-bdae-31cf0cb4d840.jpg?format=webp&imwidth=576"
                             alt="no image">
+                        <div
+                            class="w-[60%]  bg-green-500 md:px-3 md:py-1 text-center absolute md:top-10 top-5 text-white md:text-xl text-xs">
+                            <p>New release</p>
+                        </div>
                         <!-- text content -->
                         <div class="p-3">
-                            <h1 class="md:text-xl text-lg md:py-2 pt-1 leading-[1.2] font-medium px-2">Chotta Mumbai
-                            </h1>
-                            <p class="md:text-lg text-base px-2">Comedy• Malayalam </p>
+                            <h1 class="md:text-xl text-lg md:py-2 pt-1 leading-[1.2] font-medium px-2">Elio</h1>
+                            <p class="md:text-lg text-base px-2">Animation • English </p>
 
                         </div>
                         <div class="text-center">
                             <button
-                                class="text-base text-black font-medium border-0 bg-yellow-500 w-[55%] px-2 py-2">Book
+                                class="md:text-base text-sm md:text-black text-white font-medium border-0 bg-yellow-500 w-[55%] md:px-2  px-2 py-1 md:py-2">Book
                                 Now</button>
                         </div>
                     </div>
@@ -364,7 +385,7 @@
                         </div>
                         <div class="text-center">
                             <button
-                                class="text-base text-black font-medium border-0 bg-yellow-500 w-[55%] px-2 py-2">Book
+                                class="md:text-base text-sm md:text-black text-white font-medium border-0 bg-yellow-500 w-[55%] md:px-2  px-2 py-1 md:py-2">Book
                                 Now</button>
                         </div>
                     </div>
@@ -372,6 +393,10 @@
                     <div class="md:py-10 pt-5 group relative transition-transform duration-300 hover:scale-103">
                         <img src="https://assetscdn1.paytm.com/images/cinema/28-Years-Later--bf513340-d357-11ef-986c-fb3a34a3279c.jpg?format=webp&imwidth=576"
                             alt="no image">
+                        <div
+                            class="w-[60%]  bg-green-500 md:px-3 md:py-1 text-center absolute md:top-10 top-5 text-white md:text-xl text-xs">
+                            <p>New release</p>
+                        </div>
                         <!-- text content -->
                         <div class="p-3">
                             <h1 class="md:text-xl text-lg md:py-2 pt-1 leading-[1.2] font-medium px-2">28 Years Later
@@ -381,7 +406,7 @@
                         </div>
                         <div class="text-center">
                             <button
-                                class="text-base text-black font-medium border-0 bg-yellow-500 w-[55%] px-2 py-2">Book
+                                class="md:text-base text-sm md:text-black text-white font-medium border-0 bg-yellow-500 w-[55%] md:px-2  px-2 py-1 md:py-2">Book
                                 Now</button>
                         </div>
                     </div>
@@ -399,7 +424,7 @@
                         </div>
                         <div class="text-center">
                             <button
-                                class="text-base text-black font-medium border-0 bg-yellow-500 w-[55%] px-2 py-2">Book
+                                class="md:text-base text-sm md:text-black text-white font-medium border-0 bg-yellow-500 w-[55%] md:px-2  px-2 py-1 md:py-2">Book
                                 Now</button>
                         </div>
                     </div>
@@ -417,23 +442,153 @@
                         </div>
                         <div class="text-center">
                             <button
-                                class="text-base text-black font-medium border-0 bg-yellow-500 w-[55%] px-2 py-2">Book
+                                class="md:text-base text-sm md:text-black text-white font-medium border-0 bg-yellow-500 w-[55%] md:px-2  px-2 py-1 md:py-2">Book
                                 Now</button>
                         </div>
                     </div>
-
-
-
-
-
-
-
-
                 </div>
             </div>
-
         </section>
-        <!-- last div -->
+
+        <!-- coming soon section -->
+        <section>
+            <div class="mt-5 w-full h-[58rem] bg-neutral-100 pt-20">
+                <!-- cards -->
+                <div class="mx-55 bg-white rounded-3xl border-0">
+                    <!-- heading -->
+                    <div>
+                        <h2 class="md:text-4xl font-semibold text-center text-black pt-15">Coming Soon</h2>
+                    </div>
+                       <!-- VIew all button -->
+                <div class="hidden md:block font-medium text-right pt-5 text-blue-600 hover:text-blue-500 pr-2">
+                    <button class="md:text-lg text-sm
+                            md:pr-7
+                            border-0  cursor-pointer">View All
+                        
+
+                </div>
+                    <div class="grid grid-cols-2 md:grid-cols-5 md:gap-6 gap-3 px-9 pt-8 pb-0 ">
+                        <!-- movies 1 -->
+                        <div class="md:py-10 pt-5 group relative transition-transform duration-300 hover:scale-103 ">
+                            <img src="https://assetscdn1.paytm.com/images/cinema/DNA-poster-f2e22de0-476a-11f0-b70a-572de7245650.jpg?format=webp&imwidth=582"
+                                alt="no image">
+                            <div
+                                class="w-[75%]  bg-green-500 md:px-3 md:py-1 text-center absolute md:top-10 top-5 text-white md:text-sm text-xs">
+                                <p>Releasing on June 20</p>
+                            </div>
+                            <!-- text content -->
+                            <div class="p-3">
+                                <h1 class="md:text-xl text-lg md:py-2 pt-1 leading-[1.2] font-medium px-2">DNA</h1>
+                                <p class="md:text-lg text-base px-2">Action • Tamil</p>
+
+                            </div>
+                            <div class="flex items-center justify-between p-3">
+                                <button class="border-0 text-black px-2 py-1 bg-yellow-300">View Details</button>
+                               <i class="fa-regular fa-bell fa-xl"></i>
+                              
+                            </div>
+                        </div>
+
+                        <!-- movies 2 -->
+                        <div class="md:py-10 pt-5 group relative transition-transform duration-300 hover:scale-103 ">
+                            <img src="https://assetscdn1.paytm.com/images/cinema/POSTER%20United-Kingdom-of-Kerala-(UKOK)--6db49ea0-36cb-11f0-b426-a50671acfc24.jpg?format=webp&imwidth=582"
+                                alt="no image">
+                            <div
+                                class="w-[75%]  bg-green-500 md:px-3 md:py-1 text-center absolute md:top-10 top-5 text-white md:text-sm text-xs">
+                                <p>Releasing on June 20</p>
+                            </div>
+                            <!-- text content -->
+                            <div class="p-3">
+                                <h1 class="md:text-xl text-lg md:py-2 pt-1 leading-[1.2] font-medium px-2">United Kingdom of Kerala</h1>
+                                <p class="md:text-lg text-base px-2">Drama • Malayalam</p>
+
+                            </div>
+                            <div class="flex items-center justify-between p-3">
+                                <button class="border-0 text-black px-2 py-1 bg-yellow-300">View Details</button>
+                               <i class="fa-regular fa-bell fa-xl"></i>
+                              
+                            </div>
+                        </div>
+                        <!-- movies 3 -->
+                        <div class="md:py-10 pt-5 group relative transition-transform duration-300 hover:scale-103 ">
+                            <img src="https://assetscdn1.paytm.com/images/cinema/Chennai-city-Gangsters--608x800-2-2ac84d30-74d9-11ef-b0ec-3d779516ccff.jpg?format=webp&imwidth=582"
+                                alt="no image">
+                            <div
+                                class="w-[75%]  bg-green-500 md:px-3 md:py-1 text-center absolute md:top-10 top-5 text-white md:text-sm text-xs">
+                                <p>Releasing on June 25</p>
+                            </div>
+                            <!-- text content -->
+                            <div class="p-3">
+                                <h1 class="md:text-xl text-lg md:py-2 pt-1 leading-[1.2] font-medium px-2">Chennai city Gangsters</h1>
+                                <p class="md:text-lg text-base px-2">Comedy • Tamil</p>
+
+                            </div>
+                            <div class="flex items-center justify-between p-3">
+                                <button class="border-0 text-black px-2 py-1 bg-yellow-300">View Details</button>
+                               <i class="fa-regular fa-bell fa-xl"></i>
+                              
+                            </div>
+                        </div>
+                        <!-- movies 4 -->
+                        <div class="md:py-10 pt-5 group relative transition-transform duration-300 hover:scale-103 ">
+                            <img src="https://assetscdn1.paytm.com/images/cinema/P%20Love-Marriage-947f29b0-3fa9-11f0-b426-a50671acfc24.jpg?format=webp&imwidth=582"
+                                alt="no image">
+                            <div
+                                class="w-[75%]  bg-green-500 md:px-3 md:py-1 text-center absolute md:top-10 top-5 text-white md:text-sm text-xs">
+                                <p>Releasing on June 27</p>
+                            </div>
+                            <!-- text content -->
+                            <div class="p-3">
+                                <h1 class="md:text-xl text-lg md:py-2 pt-1 leading-[1.2] font-medium px-2">Love Marriage</h1>
+                                <p class="md:text-lg text-base px-2">Drama • Tamil</p>
+
+                            </div>
+                            <div class="flex items-center justify-between p-3">
+                                <button class="border-0 text-black px-2 py-1 bg-yellow-300">View Details</button>
+                               <i class="fa-regular fa-bell fa-xl"></i>
+                              
+                            </div>
+                        </div>
+                         <!-- movies 5 -->
+                     <div class="md:py-10 pt-5 group relative transition-transform duration-300 hover:scale-103 ">
+                            <img src="https://assetscdn1.paytm.com/images/cinema/maaa-f639bac0-3adc-11f0-aa9f-8fefdb33bbbf.jpg?format=webp&imwidth=582"
+                                alt="no image">
+                            <div
+                                class="w-[75%]  bg-green-500 md:px-3 md:py-1 text-center absolute md:top-10 top-5 text-white md:text-sm text-xs">
+                                <p>Releasing on June 30</p>
+                            </div>
+                            <!-- text content -->
+                            <div class="p-3">
+                                <h1 class="md:text-xl text-lg md:py-2 pt-1 leading-[1.2] font-medium px-2">MAA</h1>
+                                <p class="md:text-lg text-base px-2">Horror • Hindi</p>
+
+                            </div>
+                            <div class="flex items-center justify-between p-3">
+                                <button class="border-0 text-black px-2 py-1 bg-yellow-300">View Details</button>
+                               <i class="fa-regular fa-bell fa-xl"></i>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+
+
+
+
+    </div>
+
+
+    </section>
+
+
+
+    <!-- last div -->
     </div>
 </body>
 
