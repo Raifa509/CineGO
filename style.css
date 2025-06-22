@@ -1,14 +1,11 @@
 * {
     font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
     
 }
 
 :root {
-    --red-color: #630202;
-    --yellow-color: #FFD700;
     --lightblack-color: #1f1f1fbe;
-    --black-color:rgb(0, 0, 0);
-    --white-color: #F5F5F5;
 }
 
 #search-div p,
